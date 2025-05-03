@@ -1,1 +1,31 @@
 GET localhost:8080/hello/th
+
+### all
+GET localhost:8080/article/all
+
+### all
+GET localhost:8080/article/all?title=title
+
+
+###
+POST localhost:8080/article
+Content-Type: application/json
+
+{
+  "title": "title",
+  "body": "body",
+  "authorId": "1234"
+}
+
+###
+PUT localhost:8080/article/1
+Content-Type: application/json
+
+{
+  "title": "title updated",
+  "body": "body updated",
+  "authorId": "1111"
+}
+
+###
+GET localhost:8080/article/5
